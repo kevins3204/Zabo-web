@@ -2,47 +2,47 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>CSS only Bulma nav bar</title>
+  <title>SPARCS Zabo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css" />
-  <style>
-    @media screen and (max-width: 768px) {
-      #menu-toggle:checked + .nav-menu {
-        display: block;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="nav.css"/>
 </head>
 <body>
-
-<nav class="nav">
-  <div class="container">
-    <div class="nav-left">
-      <a class="nav-item" href="https://ko.wikipedia.org/wiki/사나_(가수)">
-        <img src="6.gif" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-      </a>
-      <a class="nav-item">
-        All
-      </a>
+  <nav class="nav">
+    <div class="container">
+      <div class="nav-left">
+        <a class="nav-item" href="https://sparcs.org">
+          <img src="Logo.jpg" width="112" height="28">
+        </a>
+        <a class="nav-item" href="">
+          Zabo
+        </a>
+        <a class="nav-item">
+          <div class="dropdown">
+            <span>Category</span>
+            <div class="dropdown-content">
+              <p>Hello World!</p>
+              <p>Hello World!</p>
+              <p>Hello World!</p>
+              <p>Hello World!</p>
+              <p>Hello World!</p>
+              <p>Hello World!</p>
+              <p>Hello World!</p>
+              <p>Hello World!</p>
+              <p>Hello World!</p>
+              <p>Hello World!</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="nav-right nav-menu">
+        <input type="text" id='srch' name="search" placeholder="Search..">
+        <a class="nav-item" href="login.html">
+          Login
+        </a>
+      </div>
     </div>
-
-    <label for="menu-toggle" class="nav-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-    <input type="checkbox" id="menu-toggle" class="is-hidden"/>
-
-    <div class="nav-right nav-menu">
-      <a class="nav-item">
-        Search
-      </a>
-      <a class="nav-item">
-        Login
-      </a>
-    </div>
-  </div>
-</nav>
-
+  </nav>
+  <img src="6.gif">
 </body>
 </html>

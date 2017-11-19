@@ -1,0 +1,56 @@
+#srch{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+	position: relative;
+}
+body {
+  min-height: 100%;
+  z-index: 2;
+  color: yellow;
+  margin: auto;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+}
+input[type=text] {
+    width: 80px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 50%;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.nav {
+	z-index: 1;
+}
+.container {
+	z-index: 1;
+}
+.nav-left {
+	z-index: 1;
+}
+.nav-item {
+	z-index: 1;
+}
